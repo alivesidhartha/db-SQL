@@ -1,93 +1,29 @@
-# Домашнее задание к занятию «Базы данных» - Макану Александр
+# Домашнее задание к занятию «Работа с данными (DDL/DML)» - Макану Александр
 
 
 ### Задание 1
 
-## Описание таблиц базы данных
+```sql
+CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 
-База данных состоит из семи основных таблиц, каждая из которых хранит определённые данные.
+SELECT user, host FROM mysql.user;
 
----
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
-### 1. Сотрудники (`Employee`)
+SHOW GRANTS FOR 'sys_temp'@'localhost';
 
-Сотрудники (
+SOURCE /home/osboxes/sakila-db/sakila-schema.sql;
+SOURCE /home/osboxes/sakila-db/sakila-data.sql;
 
-идентификатор, первичный ключ, serial,  
-фамилия varchar(50),  
-имя varchar(50),  
-отчество varchar(50),  
-оклад numeric(10,2),  
-идентификатор должности, внешний ключ, integer,  
-идентификатор структурного подразделения, внешний ключ, integer,  
-дата найма date,  
-идентификатор филиала, внешний ключ, integer  
+SHOW TABLES FROM sakila;```
 
-).
+![screenshot](img/task1-3.jpg)
 
----
+![screenshot](img/task1-5.jpg)
 
-### 2. Должности (`Position`)
+![screenshot](img/task1-8.jpg)
 
-Должности (
+### Задание 2
 
-идентификатор, первичный ключ, serial,  
-название varchar(100)
-
-).
-
----
-
-### 3. Подразделения (`Department`)
-
-Подразделения (
-
-идентификатор, первичный ключ, serial,  
-название varchar(200),  
-идентификатор типа подразделения, внешний ключ, integer  
-
-).
-
----
-
-### 4. Типы подразделений (`Department_Type`)
-
-Типы подразделений (
-
-идентификатор, первичный ключ, serial,  
-название varchar(50)
-
-).
-
----
-
-### 5. Филиалы (`Branch`)
-
-Филиалы (
-
-идентификатор, первичный ключ, serial,  
-адрес varchar(255)
-
-).
-
----
-
-### 6. Проекты (`Project`)
-
-Проекты (
-
-идентификатор, первичный ключ, serial,  
-название varchar(150)
-
-).
-
----
-
-### 7. Связь сотрудников с проектами (`Employee_Project`)
-
-Связь сотрудников с проектами (
-
-идентификатор сотрудника, внешний ключ, integer,  
-идентификатор проекта, внешний ключ, integer
-
-).
+![screenshot](img/task2.jpg)
