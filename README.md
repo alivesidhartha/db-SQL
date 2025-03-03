@@ -16,14 +16,14 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 SOURCE /home/osboxes/sakila-db/sakila-schema.sql;
 SOURCE /home/osboxes/sakila-db/sakila-data.sql;
 
-SHOW TABLES FROM sakila;```
+SHOW TABLES FROM sakila;
 
-![screenshot](img/task1-3.jpg)
+![screenshot1](img/task1-3.jpg)
 
-![screenshot](img/task1-5.jpg)
+![screenshot2](img/task1-5.jpg)
 
-![screenshot](img/task1-8.jpg)
+![screenshot3](img/task1-8.jpg)
 
 ### Задание 2
 
-![screenshot](img/task2.jpg)
+![screenshot4](img/task2.jpg)
