@@ -7,7 +7,7 @@
 
 ### Задание 2
 
-![screenshot2](img/task2-1.jpg)
+![screenshot2](img/task2.jpg)
 
 ### Задание 3
 
