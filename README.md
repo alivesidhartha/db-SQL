@@ -17,12 +17,14 @@ SOURCE /home/osboxes/sakila-db/sakila-schema.sql;
 SOURCE /home/osboxes/sakila-db/sakila-data.sql;
 
 SHOW TABLES FROM sakila;
+```
 
 ![screenshot1](img/task1-3.jpg)
 
 ![screenshot2](img/task1-5.jpg)
 
 ![screenshot3](img/task1-8.jpg)
+
 
 ### Задание 2
 
